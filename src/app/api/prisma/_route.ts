@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   const now = Date.now();
+
   await prisma.user.create({
     data: {
       email: `${now}@example.com`,
@@ -17,5 +18,5 @@ export async function GET() {
     take: 5,
   });
 
-  return NextResponse.json({ hello: "world", users });
+  return NextResponse.json({ hello: "prisma", users });
 }
