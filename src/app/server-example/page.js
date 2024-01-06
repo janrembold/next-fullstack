@@ -1,9 +1,10 @@
 export default async function Page() {
-  const noWIsoString = new Date().toLocaleString();
+  const dateString = new Date().toLocaleString();
+
   return (
     <div>
       <h1>Server Example</h1>
-      <p>{noWIsoString}</p>{" "}
+      <p>{dateString}</p>{" "}
     </div>
   );
 }
