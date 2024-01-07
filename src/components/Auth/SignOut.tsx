@@ -1,5 +1,9 @@
-import Link from "next/link";
+"use client";
+
+import { signOut } from "next-auth/react";
 
 export function SignOut() {
-  return <Link href="/api/auth/signout">Sign Out</Link>;
+  return (
+    <button onClick={() => signOut({ callbackUrl: "/" })}>Sign Out</button>
+  );
 }

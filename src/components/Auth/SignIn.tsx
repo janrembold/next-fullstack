@@ -1,5 +1,11 @@
-import Link from "next/link";
+"use client";
+
+import { signIn } from "next-auth/react";
 
 export function SignIn() {
-  return <Link href="/api/auth/signin">Sign In</Link>;
+  return (
+    <button onClick={() => signIn("auth0", { callbackUrl: "/" })}>
+      Sign In
+    </button>
+  );
 }
