@@ -39,6 +39,6 @@ Feel free to explore and customize the structure according to your project needs
 
 ## Contributing
 
-We welcome contributions! If you have suggestions, bug reports, or would like to add new features, please create an issue or submit a pull request.
+I welcome contributions! If you have suggestions, bug reports, or would like to add new features, please create an issue or submit a pull request.
 
 Happy coding! 🚀
