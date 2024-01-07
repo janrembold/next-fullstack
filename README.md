@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS Server Auth Starter
+
+Welcome to the NextJS Server Auth Starter template! 🚀
+
+This starter template is crafted to provide you with a solid foundation for building web applications with the latest and greatest technologies. It seamlessly integrates Next.js for a powerful React framework, Server Actions for server-side logic, AuthJS for authentication, Auth0 for secure authentication flows, Prisma for database access, Zod for schema validation, and React Hook Form for easy and efficient form handling.
+
+## Features
+
+- **Next.js:** A React framework for building fast and scalable web applications.
+- **Server Actions:** Enables server-side logic and API routes seamlessly integrated with your Next.js app.
+- **AuthJS and Auth0:** A robust authentication setup for secure user authentication and authorization.
+- **Prisma:** A modern database toolkit for TypeScript and Node.js, simplifying database access and management.
+- **Zod:** A TypeScript-first schema declaration and validation library for runtime safety.
+- **React Hook Form:** An efficient library for managing forms in React applications.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this template, follow these simple steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository: `git clone https://github.com/janrembold/next-fullstack.git`
+2. Install dependencies: `npm install` or `yarn install` or `pnpm install`
+3. Configure environment variables by copying `.env.example` to `.env.local` and updating the values.
+4. Start the development server: `npm run dev` or `yarn dev` or `pnpm dev`
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Folder Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project structure is organized for scalability and maintainability. Key folders include:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `prisma`: Database schema and migrations.
+- `src/actions`: Next.js server actions
+- `src/app`: Next.js app and API routes.
+- `src/components`: React UI components
+- `src/layouts`: UI layout components
+- `src/validations`: Validation schemas for usage in frontend components and server actions
 
-## Learn More
+Feel free to explore and customize the structure according to your project needs.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We welcome contributions! If you have suggestions, bug reports, or would like to add new features, please create an issue or submit a pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Happy coding! 🚀
