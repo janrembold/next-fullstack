@@ -1,12 +1,10 @@
-import { prisma } from "@/lib/prisma";
+import prisma from "@/lib/prisma";
 import { PrismaAdapter } from "@auth/prisma-adapter";
-import NextAuth from "next-auth";
+import NextAuth, { type NextAuthConfig } from "next-auth";
 import Auth0 from "next-auth/providers/auth0";
 
-export const {
-  handlers: { GET, POST },
-  auth,
-} = NextAuth({
+const authConfig = {
+  // debug: true,
   adapter: PrismaAdapter(prisma),
   providers: [
     Auth0({
@@ -15,4 +13,9 @@ export const {
       issuer: process.env.AUTH0_ISSUER,
     }),
   ],
-});
+} satisfies NextAuthConfig;
+
+export const {
+  handlers: { GET, POST },
+  auth,
+} = NextAuth(authConfig);
