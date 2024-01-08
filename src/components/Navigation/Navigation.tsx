@@ -22,9 +22,6 @@ export const Navigation = async () => {
               <Link href="/protected">Protected Example</Link>
             </li>
             <li>
-              <Link href="/protected/middleware-test">Middleware Test</Link>
-            </li>
-            <li>
               <Link href="/server-actions">Server Actions Example</Link>
             </li>
           </ul>
