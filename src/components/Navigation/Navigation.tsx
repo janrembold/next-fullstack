@@ -1,6 +1,6 @@
 import { auth } from "@/app/api/auth/[...nextauth]/auth";
 import styles from "./Navigation.module.scss";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 export const Navigation = async () => {
   const session = await auth();
@@ -9,6 +9,9 @@ export const Navigation = async () => {
     <nav className={styles.root}>
       <p>Public routes</p>
       <ul>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
         <li>
           <Link href="/server-example">Server Example</Link>
         </li>

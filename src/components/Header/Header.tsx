@@ -3,6 +3,7 @@ import styles from "./Header.module.scss";
 import { SignOut } from "../Auth/SignOut";
 import { SignIn } from "../Auth/SignIn";
 import Link from "next/link";
+import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 
 export const Header = async () => {
   const session = await auth();
@@ -12,6 +13,7 @@ export const Header = async () => {
       <div>
         <Link href="/">HOME</Link>
       </div>
+      <LocaleSwitcher />
       <div>{session ? <SignOut /> : <SignIn />}</div>
     </header>
   );
