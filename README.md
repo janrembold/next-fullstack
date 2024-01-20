@@ -37,6 +37,10 @@ The project structure is organized for scalability and maintainability. Key fold
 
 Feel free to explore and customize the structure according to your project needs.
 
+## TODOs
+
+- Full i18n integration (next-intl OR simple i18n translation without routing...) - currently next-intl is not stable with next-auth v5
+
 ## Contributing
 
 I welcome contributions! If you have suggestions, bug reports, or would like to add new features, please create an issue or submit a pull request.
