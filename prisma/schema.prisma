@@ -54,3 +54,9 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
+model ErrorLog {
+  id        Int     @id @default(autoincrement())
+  message   String
+  createdAt DateTime @default(now())
+}
