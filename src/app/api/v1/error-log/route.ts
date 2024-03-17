@@ -1,16 +1,16 @@
 import prisma from '@/lib/prisma'
 import { Prisma } from '@prisma/client'
-import { NextApiRequest, NextApiResponse } from 'next'
+import { NextApiRequest } from 'next'
 import { NextResponse } from 'next/server'
-import { auth } from '../../auth/[...nextauth]/auth'
+import { getSession, withApiAuthRequired } from '@auth0/nextjs-auth0'
 
 export const revalidate = 0
-export const GET = async (req: NextApiRequest, res: NextApiResponse) => {
-    // NOT WORKING WITHOUT EDGE!!!
-    const session = await auth(req, res)
+export const GET = withApiAuthRequired(async (req: NextApiRequest) => {
+    const session = await getSession()
 
-    if (!session) {
-        return res.status(401).json({ message: 'Unauthorized' })
+    if (!session?.user) {
+        // return res.status(401).json({ message: 'Unauthorized' })
+        return NextResponse.error()
     }
 
     const { take = 2, search = '' } = req.query || {}
@@ -32,4 +32,4 @@ export const GET = async (req: NextApiRequest, res: NextApiResponse) => {
     const logs = await prisma.errorLog.findMany(args)
 
     return NextResponse.json({ logs })
-}
+})

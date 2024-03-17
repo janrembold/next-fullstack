@@ -10,18 +10,18 @@ interface useErrorLogProps {
 export const useErrorLog = ({ take = 5, search = '' }: useErrorLogProps) => {
     const {
         data: logs,
-        error: isError,
+        error,
         isLoading,
     } = useSWR(
         `/api/v1/error-log?take=${take}&search=${search}`,
         fetcher<ErrorLog[]>,
     )
 
-    console.log('useErrorLog', { logs, isError, isLoading })
+    console.log('useErrorLog', { logs, error, isLoading })
 
     return {
         logs,
         isLoading,
-        isError,
+        error,
     }
 }

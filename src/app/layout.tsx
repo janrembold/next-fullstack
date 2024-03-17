@@ -5,6 +5,7 @@ import { Header } from '@/components/Header/Header'
 import { Main } from '@/layouts/Main/Main'
 import { TimeSync } from '@/components/TimeSync/TimeSync'
 import ErrorBoundary from '@/components/ErrorBoundary/ErrorBoundary'
+import { UserProvider } from '@auth0/nextjs-auth0/client'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,11 +23,13 @@ export default function RootLayout({
     return (
         <html lang="de">
             <body className={inter.className}>
-                <ErrorBoundary>
-                    <Header />
-                    <Main>{children}</Main>
-                    <TimeSync />
-                </ErrorBoundary>
+                <UserProvider>
+                    <ErrorBoundary>
+                        <Header />
+                        <Main>{children}</Main>
+                        <TimeSync />
+                    </ErrorBoundary>
+                </UserProvider>
             </body>
         </html>
     )

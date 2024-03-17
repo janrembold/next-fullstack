@@ -1,3 +1,5 @@
+'use client'
+
 import { ErrorLogTable } from '@/components/ErrorLog/ErrorLogTable'
 
 export const ErrorLogContainer = async () => {

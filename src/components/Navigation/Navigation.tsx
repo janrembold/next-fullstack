@@ -1,9 +1,13 @@
-import { auth } from '@/app/api/auth/[...nextauth]/auth'
+'use client'
+
+import { useUser } from '@auth0/nextjs-auth0/client'
 import styles from './Navigation.module.scss'
 import Link from 'next/link'
 
-export const Navigation = async () => {
-    const session = await auth()
+export const Navigation = () => {
+    const { user, isLoading } = useUser()
+
+    if (isLoading) return <div>Loading...</div>
 
     return (
         <nav className={styles.root}>
@@ -14,7 +18,7 @@ export const Navigation = async () => {
                 </li>
             </ul>
 
-            {session ? (
+            {user ? (
                 <>
                     <p>Protected routes</p>
                     <ul>

@@ -1,11 +1,5 @@
-"use client";
-
-import { signIn } from "next-auth/react";
+'use client'
 
 export function SignIn() {
-  return (
-    <button onClick={() => signIn("auth0", { callbackUrl: "/" })}>
-      Sign In
-    </button>
-  );
+    return <a href="/api/auth/login">Login</a>
 }
