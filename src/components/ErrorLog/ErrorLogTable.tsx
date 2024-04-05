@@ -1,13 +1,13 @@
 'use client'
 
 import { useErrorLog } from '@/hooks/useErrorLog'
+import { ErrorLog } from '@prisma/client'
 
-export const ErrorLogTable = () => {
-    const { logs = [], isLoading } = useErrorLog({ take: 2 })
-    console.log('ErrorLogTable', { logs, isLoading })
+interface ErrorLogTableProps {
+    data: ErrorLog[]
+}
 
-    if (isLoading || !Array.isArray(logs)) return <div>Loading...</div>
-
+export const ErrorLogTable = ({ data }: ErrorLogTableProps) => {
     return (
         <table>
             <thead>
@@ -18,7 +18,7 @@ export const ErrorLogTable = () => {
                 </tr>
             </thead>
             <tbody>
-                {logs.map(({ id, message, createdAt }) => (
+                {data.map(({ id, message, createdAt }) => (
                     <tr key={`error-log-row-${id}`}>
                         <td>{id}</td>
                         <td>{message}</td>

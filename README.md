@@ -6,13 +6,13 @@ This starter template is crafted to provide you with a solid foundation for buil
 
 ## Features
 
-- **Next.js:** A React framework for building fast and scalable web applications.
-- **Server Actions:** Enables server-side logic and API routes seamlessly integrated with your Next.js app.
-- **AuthJS and Auth0:** A robust authentication setup for secure user authentication and authorization.
-- **Prisma:** A modern database toolkit for TypeScript and Node.js, simplifying database access and management.
-- **Zod:** A TypeScript-first schema declaration and validation library for runtime safety.
-- **React Hook Form:** An efficient library for managing forms in React applications.
-- **PDF-LIB:** Create and modify PDF documents
+-   **Next.js:** A React framework for building fast and scalable web applications.
+-   **Server Actions:** Enables server-side logic and API routes seamlessly integrated with your Next.js app.
+-   **AuthJS and Auth0:** A robust authentication setup for secure user authentication and authorization.
+-   **Prisma:** A modern database toolkit for TypeScript and Node.js, simplifying database access and management.
+-   **Zod:** A TypeScript-first schema declaration and validation library for runtime safety.
+-   **React Hook Form:** An efficient library for managing forms in React applications.
+-   **PDF-LIB:** Create and modify PDF documents
 
 ## Getting Started
 
@@ -28,18 +28,18 @@ To get started with this template, follow these simple steps:
 
 The project structure is organized for scalability and maintainability. Key folders include:
 
-- `prisma`: Database schema and migrations.
-- `src/actions`: Next.js server actions
-- `src/app`: Next.js app and API routes.
-- `src/components`: React UI components
-- `src/layouts`: UI layout components
-- `src/validations`: Validation schemas for usage in frontend components and server actions
+-   `prisma`: Database schema and migrations.
+-   `src/actions`: Next.js server actions
+-   `src/app`: Next.js app and API routes.
+-   `src/components`: React UI components
+-   `src/layouts`: UI layout components
+-   `src/validations`: Validation schemas for usage in frontend components and server actions
 
 Feel free to explore and customize the structure according to your project needs.
 
 ## TODOs
 
-- Full i18n integration (next-intl OR simple i18n translation without routing...) - currently next-intl is not stable with next-auth v5
+-   Full i18n integration (next-intl OR simple i18n translation without routing...) - currently next-intl is not stable with next-auth v5
 
 ## Contributing
 

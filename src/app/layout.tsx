@@ -3,9 +3,11 @@ import { Inter } from 'next/font/google'
 import './globals.scss'
 import { Header } from '@/components/Header/Header'
 import { Main } from '@/layouts/Main/Main'
-import { TimeSync } from '@/components/TimeSync/TimeSync'
 import ErrorBoundary from '@/components/ErrorBoundary/ErrorBoundary'
 import { UserProvider } from '@auth0/nextjs-auth0/client'
+import { ColorSchemeScript, MantineProvider } from '@mantine/core'
+
+import '@mantine/core/styles.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,13 +24,17 @@ export default function RootLayout({
 }) {
     return (
         <html lang="de">
+            <head>
+                <ColorSchemeScript />
+            </head>
             <body className={inter.className}>
                 <UserProvider>
-                    <ErrorBoundary>
-                        <Header />
-                        <Main>{children}</Main>
-                        <TimeSync />
-                    </ErrorBoundary>
+                    <MantineProvider>
+                        <ErrorBoundary>
+                            <Header />
+                            <Main>{children}</Main>
+                        </ErrorBoundary>
+                    </MantineProvider>
                 </UserProvider>
             </body>
         </html>
