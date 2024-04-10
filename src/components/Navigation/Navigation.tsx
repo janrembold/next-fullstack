@@ -3,7 +3,6 @@
 import { useUser } from '@auth0/nextjs-auth0/client'
 import styles from './Navigation.module.scss'
 import Link from 'next/link'
-import { Role } from '@prisma/client'
 import { isAdmin } from '@/utils/user/isAdmin'
 
 export const Navigation = () => {

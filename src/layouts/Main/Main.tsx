@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import styles from './Main.module.scss'
-import { Navigation } from '@/containers/Navigation/Navigation'
+import { Navigation } from '@/components/Navigation/Navigation'
 import ErrorBoundary from '@/components/ErrorBoundary/ErrorBoundary'
 
 interface MainProps {
