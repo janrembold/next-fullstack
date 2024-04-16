@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
 
-const path = require("path");
-const nextConfig = {
-  //   trailingSlash: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, "src", "styles")],
-  },
-  reactStrictMode: true,
-};
+const nextTranslate = require('next-translate-plugin')
+const path = require('path')
 
-module.exports = nextConfig;
+const nextConfig = {
+    //   trailingSlash: true,
+    sassOptions: {
+        includePaths: [path.join(__dirname, 'src', 'styles')],
+    },
+    reactStrictMode: true,
+}
+
+module.exports = nextTranslate(nextConfig)

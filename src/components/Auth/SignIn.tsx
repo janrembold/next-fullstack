@@ -1,5 +1,9 @@
 'use client'
 
+import useTranslation from 'next-translate/useTranslation'
+
 export function SignIn() {
-    return <a href="/api/auth/login">Login</a>
+    const { t } = useTranslation('common')
+
+    return <a href="/api/auth/login">{t('login')}</a>
 }
