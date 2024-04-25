@@ -1,7 +1,11 @@
-export default function Home() {
+import { useServerTranslation } from '@/i18n/server'
+
+export default async function Page() {
+    const { t } = await useServerTranslation('home')
+
     return (
-        <>
-            <p>Welcome</p>
-        </>
+        <div>
+            <h1>{t('greeting')}</h1>
+        </div>
     )
 }
