@@ -28,8 +28,8 @@
         "@tiptap/extension-link": "2.3.0",
         "@tiptap/react": "2.3.0",
         "@tiptap/starter-kit": "2.3.0",
-        "dayjs": "1.11.10",
-        "i18next": "23.11.2",
+        "dayjs": "1.11.11",
+        "i18next": "23.11.3",
         "i18next-browser-languagedetector": "7.2.1",
         "i18next-resources-to-backend": "1.2.1",
         "lucia": "3.2.0",
@@ -45,16 +45,16 @@
         "react-loading-skeleton": "3.4.0",
         "sass": "1.75.0",
         "swr": "2.2.5",
-        "zod": "3.23.4"
+        "zod": "3.23.5"
     },
     "devDependencies": {
         "@types/node": "20.12.7",
-        "@types/react": "18.2.79",
-        "@types/react-dom": "18.2.25",
+        "@types/react": "18.3.1",
+        "@types/react-dom": "18.3.0",
         "eslint": "9.1.1",
         "eslint-config-next": "14.2.3",
         "postcss": "8.4.38",
-        "postcss-preset-mantine": "1.14.4",
+        "postcss-preset-mantine": "1.15.0",
         "postcss-simple-vars": "7.0.1",
         "prisma": "5.13.0",
         "typescript": "5.4.5"
