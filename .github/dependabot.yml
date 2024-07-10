@@ -9,7 +9,8 @@ updates:
       directory: '/' # Location of package manifests
       open-pull-requests-limit: 5
       schedule:
-          interval: 'daily'
+#          interval: 'daily'
+          interval: 'never'
       groups:
           minor-and-patch:
               patterns:
