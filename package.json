@@ -1,49 +1,50 @@
 {
-    "name": "next-fullstack",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "build": "next build",
-        "db.start": "docker-compose up",
-        "db.stop": "docker-compose down",
-        "dev": "next dev",
-        "lint": "eslint .",
-        "prisma.generate": "npx prisma generate",
-        "prisma.migrate": "npx prisma migrate dev",
-        "start": "next start"
-    },
-    "dependencies": {
-        "@auth0/nextjs-auth0": "4.13.1",
-        "@hookform/error-message": "2.0.1",
-        "@hookform/resolvers": "5.2.2",
-        "alova": "3.3.4",
-        "@prisma/client": "7.0.1",
-        "@prisma/adapter-pg": "7.0.1",
-        "@tabler/icons-react": "3.35.0",
-        "dayjs": "1.11.19",
-        "next": "16.0.4",
-        "react": "19.2.0",
-        "react-data-grid": "7.0.0-beta.58",
-        "react-dom": "19.2.0",
-        "react-hook-form": "7.66.1",
-        "react-loading-skeleton": "3.5.0",
-        "zod": "4.1.13"
-    },
-    "devDependencies": {
-        "@types/node": "^22",
-        "@types/pg": "8.15.6",
-        "@types/react": "19.2.7",
-        "@types/react-dom": "19.2.3",
-        "dotenv": "17.2.3",
-        "eslint": "9.39.1",
-        "eslint-config-next": "16.0.4",
-        "pg": "8.16.3",
-        "prisma": "7.0.1",
-        "sass": "1.94.2",
-        "typescript": "5.9.3"
-    },
-    "engines": {
-        "node": ">=18.17.0 <=21"
-    },
-    "license": "MIT"
+  "name": "next-fullstack",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "db.start": "docker-compose up",
+    "db.stop": "docker-compose down",
+    "dev": "next dev",
+    "lint": "eslint .",
+    "prisma.generate": "npx prisma generate",
+    "prisma.migrate": "npx prisma migrate dev",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@auth0/nextjs-auth0": "4.13.1",
+    "@hookform/error-message": "2.0.1",
+    "@hookform/resolvers": "5.2.2",
+    "alova": "3.3.4",
+    "@prisma/client": "7.0.1",
+    "@prisma/adapter-pg": "7.0.1",
+    "@tabler/icons-react": "3.35.0",
+    "dayjs": "1.11.19",
+    "next": "16.0.4",
+    "next-intl": "4.5.5",
+    "react": "19.2.0",
+    "react-data-grid": "7.0.0-beta.58",
+    "react-dom": "19.2.0",
+    "react-hook-form": "7.66.1",
+    "react-loading-skeleton": "3.5.0",
+    "zod": "4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/pg": "8.15.6",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "dotenv": "17.2.3",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.0.4",
+    "pg": "8.16.3",
+    "prisma": "7.0.1",
+    "sass": "1.94.2",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=18.17.0 <=21"
+  },
+  "license": "MIT"
 }

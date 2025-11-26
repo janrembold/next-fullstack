@@ -1,10 +1,13 @@
-export default async function Page() {
-    const formattedTimestamp = new Date().toLocaleString()
+import { getTranslations } from 'next-intl/server'
 
-    return (
-        <div>
-            <h1>TODO: Add something here</h1>
-            <p>{formattedTimestamp}</p>
-        </div>
-    )
+export default async function Page() {
+  const t = await getTranslations('test')
+  const formattedTimestamp = new Date().toLocaleString()
+
+  return (
+    <div>
+      <h1>{t('title')}</h1>
+      <p>{formattedTimestamp}</p>
+    </div>
+  )
 }
