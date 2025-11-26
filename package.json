@@ -18,6 +18,7 @@
         "@hookform/resolvers": "3.3.4",
         "alova": "3.3.4",
         "@prisma/client": "7.0.1",
+        "@prisma/adapter-pg": "7.0.1",
         "@tabler/icons-react": "3.35.0",
         "dayjs": "1.11.19",
         "next": "16.0.4",
@@ -33,10 +34,13 @@
     },
     "devDependencies": {
         "@types/node": "20.12.7",
+        "@types/pg": "8.15.6",
         "@types/react": "19.2.6",
         "@types/react-dom": "19.2.3",
+        "dotenv": "17.2.3",
         "eslint": "9.39.1",
         "eslint-config-next": "16.0.4",
+        "pg": "8.16.3",
         "prisma": "7.0.1",
         "typescript": "5.9.3"
     },

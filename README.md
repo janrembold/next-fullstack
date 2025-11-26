@@ -11,7 +11,6 @@ This starter template is crafted to provide you with a solid foundation for buil
 -   **Prisma:** A modern database toolkit for TypeScript and Node.js, simplifying database access and management.
 -   **Zod:** A TypeScript-first schema declaration and validation library for runtime safety.
 -   **React Hook Form:** An efficient library for managing forms in React applications.
--   **Mantine UI Library:** Accessible fully featured React component library
 -   **PDF-LIB:** Create and modify PDF documents
 
 ## Getting Started
