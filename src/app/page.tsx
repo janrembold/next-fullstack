@@ -1,11 +1,10 @@
-import { useServerTranslation } from '@/i18n/server'
-
 export default async function Page() {
-    const { t } = await useServerTranslation('home')
+    const formattedTimestamp = new Date().toLocaleString()
 
     return (
         <div>
-            <h1>{t('greeting')}</h1>
+            <h1>TODO: Add something here</h1>
+            <p>{formattedTimestamp}</p>
         </div>
     )
 }

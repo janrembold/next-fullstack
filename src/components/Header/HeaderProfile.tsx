@@ -9,5 +9,7 @@ export const HeaderProfile = () => {
 
     if (isLoading) return null
 
+    if (user) console.log('User in HeaderProfile:', user)
+
     return <div>{user ? <SignOut /> : <SignIn />}</div>
 }

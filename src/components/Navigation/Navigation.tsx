@@ -3,7 +3,6 @@
 import { useUser } from '@auth0/nextjs-auth0/client'
 import styles from './Navigation.module.scss'
 import Link from 'next/link'
-import { isAdmin } from '@/utils/user/isAdmin'
 
 export const Navigation = () => {
     const { user, isLoading } = useUser()
@@ -19,17 +18,6 @@ export const Navigation = () => {
                     <Link href="/example/public">TODO: Add something here</Link>
                 </li>
             </ul>
-
-            {isAdmin(user?.roles) ? (
-                <>
-                    <p>Admin routes</p>
-                    <ul>
-                        <li>
-                            <Link href="/admin/users">Users</Link>
-                        </li>
-                    </ul>
-                </>
-            ) : null}
 
             {user ? (
                 <>
